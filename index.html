@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- link css normalize -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/normalize.css"
+    />
+
+    <!-- link css bootstrap  css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/bootstrap.min.css"
+    />
+
+    <!-- link css main -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/master.css"
+    />
+
+    <!-- link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link font awesome css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/all.min.css"
+    />
+    <!-- link my Framework  css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/myFramework.css"
+    />
+  </head>
+
+  <body>
+    <!-- Start Settings Box -->
+    <div class="settings-box fixed-top bg-white min-vh-100">
+      <div
+        class="toggle-setting position-absolute bg-white text-center c-point"
+      >
+        <i class="fa fa-gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="option-box text-center bg-light pad-10 mar-10">
+          <h4 class="m-0 text-black-50">Colors</h4>
+          <ul class="colors-list d-flex justify-content-center pad-0">
+            <li class="active rounded-circle c-point" data-color="#673ab7"></li>
+            <li class="rounded-circle c-point" data-color="#bc1616"></li>
+            <li class="rounded-circle c-point" data-color="#23906b"></li>
+            <li class="rounded-circle c-point" data-color="#ffdb03"></li>
+            <li class="rounded-circle c-point" data-color="#ff66bf"></li>
+          </ul>
+        </div>
+        <div class="option-box text-center bg-light pad-10 mar-10">
+          <h4 class="m-0 text-black-50">Radom Backgrounds</h4>
+          <div class="random-backgrounds">
+            <span
+              class="yes active mt-1 text-white d-inline-block fw-bold c-point b-rad-5-px"
+              data-bck="yes"
+              >Yes</span
+            >
+            <span
+              class="no mt-1 text-white d-inline-block fw-bold c-point b-rad-5-px"
+              data-bck="no"
+              >No</span
+            >
+          </div>
+        </div>
+        <div class="option-box text-center bg-light pad-10 mar-10">
+          <h4 class="m-0 text-black-50">Show Bullets</h4>
+          <div class="bullets-option">
+            <span
+              class="yes active mt-1 text-white d-inline-block fw-bold c-point b-rad-5-px"
+              data-display="block"
+              >Yes</span
+            >
+            <span
+              class="no mt-1 text-white d-inline-block fw-bold c-point b-rad-5-px"
+              data-display="none"
+              >No</span
+            >
+          </div>
+        </div>
+        <button
+          class="reset-options border-0 d-block text-white fw-bold cursor-pointer b-rad-5-px pad-10"
+        >
+          Reset Options
+        </button>
+      </div>
+    </div>
+    <!-- End Settings Box -->
+    <!-- Star  Nav bullets  -->
+    <div class="nav-bullets position-fixed top-50 end-0"></div>
+    <!-- End  Nav bullets  -->
+
+    <!-- Star Landing Page -->
+    <div class="landing-page position-relative min-vh-100">
+      <div class="back-image position-absolute w-100 h-100 overflow-hidden">
+        <img
+          data-img="img1"
+          class="active position-absolute"
+          src="imgs/img1.jpg"
+          alt=""
+        />
+        <img
+          data-img="img2"
+          class="position-absolute"
+          src="imgs/img2.jpg"
+          alt=""
+        />
+        <img
+          data-img="img3"
+          class="position-absolute"
+          src="imgs/img3.jpg"
+          alt=""
+        />
+        <img
+          data-img="img4"
+          class="position-absolute"
+          src="imgs/img4.jpg"
+          alt=""
+        />
+        <img
+          data-img="img5"
+          class="position-absolute"
+          src="imgs/img5.jpg"
+          alt=""
+        />
+      </div>
+      <div class="overlay position-absolute w-100 h-100"></div>
+      <div class="container">
+        <div class="header-area position-relative d-flex align-items-center">
+          <div class="logo p-lef-20">
+            <img src="imgs/alio coding.png" alt="" />
+          </div>
+          <div class="links-container w-100 text-end">
+            <ul class="links list-unstyled d-none d-lg-block p-rig-20">
+              <li class="d-inline-block">
+                <a
+                  class="active text-white text-decoration-none"
+                  href="#"
+                  data-section=".about-us"
+                  >About
+                </a>
+              </li>
+              <li class="d-inline-block">
+                <a
+                  class="text-white text-decoration-none"
+                  href="#"
+                  data-section=".skills"
+                  >SKills
+                </a>
+              </li>
+              <li class="d-inline-block">
+                <a
+                  class="text-white text-decoration-none"
+                  href="#"
+                  data-section=".gallery"
+                  >Gallery
+                </a>
+              </li>
+              <li class="d-inline-block">
+                <a
+                  class="text-white text-decoration-none"
+                  href="#"
+                  data-section=".timeline"
+                  >Timeline
+                </a>
+              </li>
+              <li class="d-inline-block">
+                <a
+                  class="text-white text-decoration-none"
+                  href="#"
+                  data-section=".features"
+                  >Features
+                </a>
+              </li>
+              <li class="d-inline-block">
+                <a
+                  class="text-white text-decoration-none"
+                  href="#"
+                  data-section=".testimonials"
+                  >Testimonials
+                </a>
+              </li>
+            </ul>
+            <button
+              class="toggle-menu bg-transparent border-0 position-relative c-point d-lg-none inline-block"
+            >
+              <i class="fa-solid fa-bars fa-2xl text-white"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="introduction-text position-absolute top-50 start-50 text-white text-center m-0"
+        >
+          <h1>We Are <span> Creative </span>Agency</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
+            tempora exercitationem ex voluptate, assumenda harum, hic ipsum,
+            excepturi ullam impedit eos. Harum quos praesentium eum earum quo
+            corrupti perspiciatis mollitia?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing Page -->
+
+    <!-- Star about-us -->
+    <div class="about-us">
+      <div class="container d-block d-md-flex text-center text-md-start">
+        <div class="info-box flex-fill">
+          <h2 class="fw-bold">About Us</h2>
+          <p class="m-0 text-black-50">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+            sapiente excepturi veritatis animi quod provident labore distinctio.
+            Quia, iste. Id sit repellat sint sed aspernatur autem nostrum modi
+            consequuntur amet?
+          </p>
+        </div>
+        <div class="image-box text-center">
+          <img src="imgs/amico-673ab7.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End about-us -->
+
+    <!-- Start Our Skills -->
+    <div class="skills">
+      <div class="container">
+        <h2 class="text-center fw-bold">Our Skills</h2>
+        <div class="skill-box d-flex">
+          <div class="skill-name fw-bold text-center">HTML</div>
+          <div
+            class="skill-progress position-relative overflow-hidden w-100 b-rad-5-px"
+          >
+            <span data-progress="80%" class="position-absolute h-100"></span>
+          </div>
+        </div>
+        <div class="skill-box d-flex">
+          <div class="skill-name fw-bold text-center">CSS</div>
+          <div
+            class="skill-progress position-relative overflow-hidden w-100 b-rad-5-px"
+          >
+            <span data-progress="70%" class="position-absolute h-100"></span>
+          </div>
+        </div>
+        <div class="skill-box d-flex">
+          <div class="skill-name fw-bold text-center">JavaScript</div>
+          <div
+            class="skill-progress position-relative overflow-hidden w-100 b-rad-5-px"
+          >
+            <span data-progress="90%" class="position-absolute h-100"></span>
+          </div>
+        </div>
+        <div class="skill-box d-flex">
+          <div class="skill-name fw-bold text-center">Python</div>
+          <div
+            class="skill-progress position-relative overflow-hidden w-100 b-rad-5-px"
+          >
+            <span data-progress="80%" class="position-absolute h-100"></span>
+          </div>
+        </div>
+        <div class="skill-box d-flex">
+          <div class="skill-name fw-bold text-center">PHP</div>
+          <div
+            class="skill-progress position-relative overflow-hidden w-100 b-rad-5-px"
+          >
+            <span data-progress="90%" class="position-absolute h-100"></span>
+          </div>
+        </div>
+        <div class="skill-box d-flex">
+          <div class="skill-name fw-bold text-center">MySQL</div>
+          <div
+            class="skill-progress position-relative overflow-hidden w-100 b-rad-5-px"
+          >
+            <span data-progress="70%" class="position-absolute h-100"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Our Skills -->
+
+    <!-- Start Gallery -->
+    <div class="gallery">
+      <div class="container text-center">
+        <h2 class="fw-bold">Our Gallery</h2>
+        <div class="images-box">
+          <img class="c-point mar-5" src="imgs/img1.jpg" alt="Image One" />
+          <img class="c-point mar-5" src="imgs/img2.jpg" alt="Image Two" />
+          <img class="c-point mar-5" src="imgs/img3.jpg" alt="Image Three" />
+          <img class="c-point mar-5" src="imgs/img4.jpg" alt="Image Four" />
+          <img class="c-point mar-5" src="imgs/img5.jpg" alt="Image Five" />
+          <img class="c-point mar-5" src="imgs/img6.jpg" alt="Image Six" />
+          <img class="c-point mar-5" src="imgs/img7.jpg" alt="Image Seven" />
+          <img class="c-point mar-5" src="imgs/img8.jpg" alt="Image Eight" />
+          <img class="c-point mar-5" src="imgs/img9.jpg" alt="Image Nine" />
+          <img class="c-point mar-5" src="imgs/img10.jpg" alt="Image Ten" />
+        </div>
+      </div>
+    </div>
+    <!-- End Gallery -->
+
+    <!-- Start Timeline -->
+    <div class="timeline">
+      <div class="container">
+        <div class="timeline-content position-relative overflow-hidden">
+          <div
+            class="year position-relative text-center fw-bold text-white b-rad-5-px"
+          >
+            2023
+          </div>
+          <div class="left position-relative">
+            <div class="content bg-white pad-20">
+              <h3 class="fw-bold">Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="right position-relative">
+            <div class="content bg-white pad-20">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div
+            class="year position-relative text-center fw-bold text-white b-rad-5-px"
+          >
+            2022
+          </div>
+          <div class="left position-relative">
+            <div class="content bg-white pad-20">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left position-relative">
+            <div class="content bg-white pad-20">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Timeline -->
+
+    <!-- Start Features -->
+    <div class="features">
+      <h2 class="fw-bold text-center">Our Features</h2>
+      <div class="container">
+        <div class="feat-box text-center">
+          <img src="imgs/stat.png" alt="" />
+          <h4 class="position-relative">Development</h4>
+          <p class="text-black-50">
+            we Are Professional mearketeers, We Will do anything you imagine in
+            no thime.
+          </p>
+        </div>
+        <div class="feat-box text-center">
+          <img src="imgs/analytic.png" alt="" />
+          <h4 class="position-relative">Development</h4>
+          <p class="text-black-50">
+            we Are Professional mearketeers, We Will do anything you imagine in
+            no thime.
+          </p>
+        </div>
+        <div class="feat-box text-center">
+          <img src="imgs/feature-selection.png" alt="" />
+          <h4 class="position-relative">Development</h4>
+          <p class="text-black-50">
+            we Are Professional mearketeers, We Will do anything you imagine in
+            no thime.
+          </p>
+        </div>
+        <div class="feat-box text-center">
+          <img src="imgs/features.png" alt="" />
+          <h4 class="position-relative">Development</h4>
+          <p class="text-black-50">
+            we Are Professional mearketeers, We Will do anything you imagine in
+            no thime.
+          </p>
+        </div>
+        <div class="feat-box text-center">
+          <img src="imgs/web-management.png" alt="" />
+          <h4 class="position-relative">Development</h4>
+          <p class="text-black-50">
+            we Are Professional mearketeers, We Will do anything you imagine in
+            no thime.
+          </p>
+        </div>
+        <div class="feat-box text-center">
+          <img src="imgs/goal.png" alt="" />
+          <h4 class="position-relative">Development</h4>
+          <p class="text-black-50">
+            we Are Professional mearketeers, We Will do anything you imagine in
+            no thime.
+          </p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- End Features -->
+
+    <!-- Star Testimonials -->
+    <div class="testimonials position-relative">
+      <div class="container">
+        <h2
+          class="fw-bold text-white position-relative text-center text-md-start"
+        >
+          Testimonials
+        </h2>
+        <div class="ts-box position-relative bg-white">
+          <p class="fst-italic text-black-50 text-black-50">
+            Im Very Happy with the product ist amazig and i recieve it very fast
+            and the price was amzing
+          </p>
+          <div
+            class="person-info overflow-hidden text-center text-lg-start overflow-visible overflow-lg-hidden"
+          >
+            <img class="rounded-circle" src="imgs/b.png" alt="" />
+            <h3>Taki Dz</h3>
+            <p class="m-0">Tiktoker</p>
+          </div>
+        </div>
+        <div class="ts-box position-relative bg-white">
+          <p class="fst-italic text-black-50">
+            Im Very Happy with the product ist amazig and i recieve it very fast
+            and the price was amzing
+          </p>
+          <div class="person-info overflow-hidden text-center text-lg-start">
+            <img class="rounded-circle" src="imgs/a.png" alt="" />
+            <h3>Alilo coding</h3>
+            <p class="m-0">Programer</p>
+          </div>
+        </div>
+        <div class="ts-box position-relative bg-white">
+          <p class="fst-italic text-black-50">
+            Im Very Happy with the product ist amazig and i recieve it very fast
+            and the price was amzing
+          </p>
+          <div class="person-info overflow-hidden text-center text-lg-start">
+            <img class="rounded-circle" src="imgs/o.png" alt="" />
+            <h3>Osama Arn</h3>
+            <p class="m-0">video editor</p>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <!-- End Testimonials -->
+
+    <!-- Start Contact Us -->
+    <div class="contact position-relative">
+      <div class="overlay position-absolute start-0 top-0 w-100 h-100"></div>
+      <div class="container position-relative">
+        <h2 class="fw-bold text-center">Contact Us</h2>
+        <form class="d-flex justify-content-between flex-wrap m-auto" action="">
+          <div class="left">
+            <input
+              class="d-block w-100"
+              type="text"
+              placeholder="Your Name"
+              name="username"
+            />
+            <input
+              class="d-block w-100"
+              type="text"
+              placeholder="Your phone"
+              name="phone"
+            />
+            <input
+              class="d-block w-100"
+              type="email"
+              placeholder="Your email"
+              name="email"
+            />
+            <input
+              class="d-block w-100"
+              type="text"
+              placeholder="subject"
+              name="subject"
+            />
+          </div>
+          <div class="left">
+            <textarea
+              class="d-block w-100 text-white r-none"
+              placeholder="Your message"
+              name="message"
+            ></textarea>
+            <input
+              class="d-block w-100 text-white border-0 c-point pad-10"
+              type="submit"
+              value="Send"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+
+    <!--str footer-->
+    <div class="footer text-center">Created with Alilo Coding</div>
+    <!-- End footer -->
+
+    <!-- link main javascript -->
+    <script src="js/master.js"></script>
+
+    <!-- link font awesome javascript -->
+    <!-- <script src="js/all.min.js"></script> -->
+
+    <!-- link bootstrap javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
