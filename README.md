@@ -1,6 +1,6 @@
 # Alilo Coding — Creative Agency Website Template
 
-> A feature-rich, single-page website template built with **Bootstrap 5**, **CSS Custom Properties**, and **Vanilla JavaScript (ES6+)**. Features a live settings panel with **5 color themes**, **localStorage persistence**, a **gallery lightbox**, **scroll-triggered skill bars**, and auto-generated **side navigation bullets**.
+🌐 Websites. A feature-rich, single-page website template built with **Bootstrap 5**, **CSS Custom Properties**, and **Vanilla JavaScript (ES6+)**. Features a live settings panel with **5 color themes**, **localStorage persistence**, a **gallery lightbox**, **scroll-triggered skill bars**, and auto-generated **side navigation bullets**.
 
 ---
 
